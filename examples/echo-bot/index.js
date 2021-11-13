@@ -33,16 +33,16 @@ function handleEvent(event) {
   if (event.type !== 'message' || event.message.type !== 'text') {
     // ignore non-text-message event
     return Promise.resolve(null);
-  }else if (event.nessage.type == 'text' || event.message.type == 'Hi') {
+  }else if (event.nessage.type == "text" || event.message.text. == 'Hi') {
   type: "text",
   text: "hi ben" 
-  
-};
-  payload
+ };
+  ruturn client.replyMessage(event.rlpeyToken, payload);
+}
 }​
   // create a echoing text message
   const echo = { type: 'text', text: event.message.text };
-
+}​
   // use reply API
   (event.type !== 'message' || event.message.type !== 'text') { echo);
 }
